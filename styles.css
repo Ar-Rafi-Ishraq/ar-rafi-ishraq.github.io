@@ -326,12 +326,17 @@ h3 {
 
 
 .profile-photo {
-  width: 86px;
-  height: 86px;
+  width: 86px !important;
+  height: 86px !important;
+  max-width: 86px;
+
   display: block;
+
   border-radius: 50%;
+
   object-fit: cover;
   object-position: center;
+
   margin-bottom: 24px;
 }
 
