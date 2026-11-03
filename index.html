@@ -390,119 +390,50 @@
             </p>
 
 
+            <p class="research-supervisor"><strong>Supervisor:</strong> Dr. Mohammad Rakibul Islam, Professor, Department of EEE, IUT</p>
             <p>
-              Designed a
-              <strong>
-                quad-sector dual-plasmonic photonic crystal fiber
-                biosensor
-              </strong>
-              incorporating Ag–TiO<sub>2</sub> and ITO layers to enhance
-              Double Peak Shift Sensitivity (DPSS) for
-              refractive-index-based biosensing applications.
+              Designed and numerically evaluated a <strong>quad-sector microstructured photonic crystal fiber (PCF) refractive-index sensor</strong> with two spatially separated plasmonic sensing interfaces: ITO at the upper and lower sectors, and an Ag–TiO<sub>2</sub> arrangement at the lateral sectors. The different optical responses produce two resonance branches that can be assessed through conventional wavelength sensitivity and Dual-Peak Shift Sensitivity (DPSS).
             </p>
-
-
             <ul class="research-points">
-
-              <li>
-                Performed finite-element-method simulations in
-                <strong>
-                  COMSOL Multiphysics 6.2
-                </strong>
-                to characterize core–SPR mode coupling and investigate
-                structural parameters including air-hole diameter
-                and pitch for improved sensitivity and reduced
-                confinement loss.
-              </li>
-
-
-              <li>
-                Benchmarked the proposed design against
-                <strong>
-                  15+ recent PCF-SPR biosensors
-                </strong>
-                in the literature, investigating dual-plasmonic
-                layering for simultaneous wavelength- and
-                amplitude-sensitivity enhancement.
-              </li>
-
+              <li>Developed a two-dimensional transverse eigenmode model in <strong>COMSOL Multiphysics</strong> using the <strong>finite element method (FEM)</strong>, including wavelength-dependent optical properties for fused silica, ITO, silver, and titanium dioxide.</li>
+              <li>Examined core-guided and surface plasmon polariton (SPP) modes, electric-field distributions, phase matching, and confinement-loss spectra.</li>
+              <li>Conducted sequential parameter studies of ITO, Ag, and TiO<sub>2</sub> coating thicknesses, followed by checks of air-hole dimensions and pitch, over an analyte refractive-index range of <strong>1.33–1.38</strong>.</li>
             </ul>
-
-
-            <!-- RESEARCH METRICS -->
-
-            <div
-              class="research-metrics"
-              aria-label="Key thesis performance metrics"
-            >
-
-              <div class="metric">
-
-                <span class="metric-value">
-                  11,000
-                </span>
-
-                <span class="metric-label">
-                  nm/RIU
-                  <br>
-                  Wavelength Sensitivity
-                </span>
-
+            <div class="research-parameters">
+              <h4>Selected model parameters</h4>
+              <div class="parameter-list">
+                <span><strong>ITO:</strong> 20 nm</span>
+                <span><strong>Ag:</strong> 1 nm</span>
+                <span><strong>TiO<sub>2</sub>:</strong> 30 nm</span>
+                <span><strong>Pitch:</strong> 1.35 μm</span>
+                <span><strong>Small-hole radius:</strong> 0.20 μm</span>
+                <span><strong>Large-hole radius:</strong> 1.25 μm</span>
               </div>
-
-
-              <div class="metric">
-
-                <span class="metric-value">
-                  141.5
-                </span>
-
-                <span class="metric-label">
-                  RIU<sup>−1</sup>
-                  <br>
-                  Amplitude Sensitivity
-                </span>
-
-              </div>
-
-
-              <div class="metric">
-
-                <span class="metric-value">
-                  9,000
-                </span>
-
-                <span class="metric-label">
-                  nm/RIU
-                  <br>
-                  DPSS
-                </span>
-
-              </div>
-
             </div>
-
-
-            <p class="research-stack">
-              COMSOL Multiphysics 6.2 ·
-              FEM ·
-              PCF-SPR ·
-              Ag–TiO<sub>2</sub> ·
-              ITO
+            <div class="research-metrics" aria-label="Thesis numerical performance results">
+              <div class="metric"><span class="metric-value">26,000</span><span class="metric-label">nm/RIU<br />Maximum wavelength sensitivity</span></div>
+              <div class="metric"><span class="metric-value">21,000</span><span class="metric-label">nm/RIU<br />Maximum DPSS</span></div>
+              <div class="metric"><span class="metric-value">3.85 × 10<sup>−6</sup></span><span class="metric-label">RIU<br />Best theoretical RI resolution<br />(assuming 0.1 nm wavelength detection)</span></div>
+              <div class="metric"><span class="metric-value">272.74</span><span class="metric-label">nm<br />FWHM at maximum-WS condition</span></div>
+              <div class="metric"><span class="metric-value">95.33</span><span class="metric-label">RIU<sup>−1</sup><br />Figure of merit</span></div>
+            </div>
+            <p class="research-explanation">
+              The final quantitative analysis is based primarily on the x-polarized response. The maximum wavelength sensitivity and DPSS were both obtained over the RI interval 1.37–1.38. Wavelength sensitivity tracks the long-wavelength resonance, while DPSS measures the change in separation between the two resonance peaks.
             </p>
-
+            <div class="research-caveat">
+              <strong>Scope and limitation:</strong> These are numerical simulation results, not experimental measurements. No physical sensor was fabricated or tested. The model uses bulk analyte refractive index rather than analyte-specific binding chemistry, so it does not establish selective detection of a particular biomolecule. The parameter search was discrete and sequential, not a global optimization. Experimental validation, fabrication-tolerance analysis, and the practical continuity of the nominal 1 nm Ag layer remain important next steps.
+            </div>
+            <p class="research-stack">COMSOL Multiphysics · FEM · PCF-SPR · Eigenmode Analysis · Optical Material Dispersion · MATLAB Post-Processing</p>
+            
           </div>
-
         </article>
-
       </div>
-
     </section>
 
 
 
     <!-- ======================================================
-         SELECTED PROJECTS
+         ACADEMIC PROJECTS
     ======================================================= -->
 
     <section
@@ -522,7 +453,7 @@
             </p>
 
             <h2>
-              Selected Projects
+              Academic Projects
             </h2>
 
           </div>
@@ -810,117 +741,42 @@
 
 
 
-    <!-- ======================================================
-         EXPERIENCE & LEADERSHIP
-    ======================================================= -->
-
-    <section
-      id="experience"
-      class="section alt"
-    >
-
+    <!-- EXPERIENCE & LEADERSHIP -->
+    <section id="experience" class="section">
       <div class="container">
-
-        <p class="section-kicker">
-          04
-        </p>
-
-        <h2>
-          Experience &amp; Leadership
-        </h2>
-
-
+        <p class="section-kicker">05</p>
+        <h2>Leadership &amp; Technical Experience</h2>
         <div class="timeline">
-
-
-          <!-- PROJECT ALTAIR -->
-
           <article>
-
             <div class="timeline-meta">
-
-              <h3>
-                Project Altair — IUT Mars Rover Team
-              </h3>
-
-              <p>
-                Electrical System Sub-Team · 2023–2025
-              </p>
-
+              <h3>Project Altair — IUT Mars Rover Team</h3>
+              <p>Junior Member, Electrical Sub-Team · 2023–2024<br />Senior Member, Electrical Sub-Team · 2024–2025</p>
             </div>
-
-
             <ul>
-
-              <li>
-                Worked on circuit development, Autodesk Eagle PCB
-                design, wiring, system integration, testing,
-                and troubleshooting.
-              </li>
-
-
-              <li>
-                Participated with the team in ERC 2023 and IRC 2024;
-                Project Altair received the Best Science Team award
-                at IRC 2024.
-              </li>
-
-
-              <li>
-                Progressed from Junior Member to Senior Member
-                of the Electrical Sub-Team.
-              </li>
-
+              <li>Contributed to rover electrical-system development through circuit design, PCB design using Autodesk EAGLE, wiring, system integration, testing, and hardware troubleshooting.</li>
+              <li>Participated in the European Rover Challenge 2023 and International Rover Challenge 2024; Project Altair received the <strong>Best Science Team Award at IRC 2024</strong>.</li>
             </ul>
-
           </article>
-
-
-
-          <!-- ROBOTICS SOCIETY -->
-
           <article>
-
             <div class="timeline-meta">
-
-              <h3>
-                IUT Robotics Society
-              </h3>
-
-              <p>
-                2023–2025
-              </p>
-
+              <h3>IUT Robotics Society (IUT RS)</h3>
+              <p>Sub Executive Officer · 2023–2024<br />Assistant Head, Event &amp; Workshop · 2024–2025</p>
             </div>
-
-
             <ul>
-
-              <li>
-                Served as Assistant Head (Event &amp; Workshop)
-                after working as a Sub Executive Officer.
-              </li>
-
-
-              <li>
-                Helped organize TECHATHON 1.0 2024 and
-                Drone Workshop 2024.
-              </li>
-
-
-              <li>
-                Contributed to arena design for Soccerbot,
-                Line Following Robot, and RC Bot competitions.
-              </li>
-
+              <li>Helped organize TECHATHON 1.0 2024 and Drone Workshop 2024, contributing to planning, logistics, technical preparation, and execution.</li>
+              <li>Contributed to the design and preparation of competition arenas for Soccerbot, Line Following Robot (LFR), and RC Bot competitions.</li>
             </ul>
-
           </article>
-
         </div>
 
+        <div class="subsection-heading"><p class="tag">Industry Exposure</p><h3>Industrial Training &amp; Visits</h3></div>
+        <div class="visit-grid">
+          <article class="visit-card"><p class="visit-date">Oct 04–09, 2025</p><h4>Ghorashal Training Center / Power Station</h4><p>Gained exposure to power-station operations, electrical systems, power-generation processes, and associated industrial equipment.</p></article>
+          <article class="visit-card"><p class="visit-date">Oct 12–16, 2025</p><h4>Bangladesh Atomic Energy Commission (BAEC)</h4><p>Observed solar-cell fabrication processes and visited the 3 MW TRIGA Mark-II research reactor.</p></article>
+          <article class="visit-card"><p class="visit-date">Oct 20, 2025</p><h4>Robi Axiata Limited — Head Office</h4><p>Gained exposure to telecommunications operations, network infrastructure, technical workflows, and service management.</p></article>
+          <article class="visit-card"><p class="visit-date">Sep 29, 2025</p><h4>Walton Hi-Tech Industries PLC</h4><p>Observed industrial manufacturing processes, automation, production systems, and quality-control practices.</p></article>
+        </div>
       </div>
-
     </section>
 
 
