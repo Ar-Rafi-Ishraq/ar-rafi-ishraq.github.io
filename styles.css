@@ -878,7 +878,6 @@ h3 {
 
 
 
-
 /* ==========================================================
    CERTIFICATES
 ========================================================== */
@@ -1280,4 +1279,266 @@ footer {
     line-height: 1.8;
   }
 
+}
+
+/* ==========================================================
+   GRADUATE PROFILE / EDUCATION / RESEARCH ADDITIONS
+========================================================== */
+
+.profile-status {
+  display: inline-block;
+  margin: 0 0 18px;
+  padding: 6px 11px;
+  border-radius: 999px;
+  background: #e8f1f3;
+  color: var(--accent-2);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+}
+
+.interest-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-top: 24px;
+}
+
+.interest-list span,
+.parameter-list span {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--muted);
+  font-size: 0.86rem;
+  font-weight: 600;
+}
+
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.education-card,
+.scholarship-panel,
+.visit-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: 0 6px 24px rgba(21, 34, 46, 0.045);
+}
+
+.education-card {
+  padding: 24px;
+}
+
+.education-card.featured {
+  grid-column: span 2;
+}
+
+.education-card h3 {
+  margin-bottom: 8px;
+}
+
+.education-degree {
+  color: var(--muted);
+  margin: 0 0 16px;
+}
+
+.education-stats {
+  display: flex;
+  gap: 12px;
+  margin: 16px 0;
+}
+
+.education-stats > div {
+  display: flex;
+  flex-direction: column;
+  min-width: 130px;
+  padding: 13px 15px;
+  border-radius: 12px;
+  background: var(--bg);
+}
+
+.education-stats strong {
+  color: var(--accent);
+  font-size: 1.25rem;
+}
+
+.education-stats span {
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.education-note {
+  margin: 12px 0 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.scholarship-panel {
+  margin-top: 18px;
+  padding: 22px 26px;
+}
+
+.scholarship-panel h3 {
+  margin-bottom: 10px;
+}
+
+.scholarship-panel ul {
+  margin: 0;
+  padding-left: 20px;
+  color: var(--muted);
+}
+
+.scholarship-panel li + li {
+  margin-top: 6px;
+}
+
+.research-parameters {
+  margin: 22px 0 8px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--bg);
+}
+
+.research-parameters h4 {
+  margin: 0 0 12px;
+  font-size: 0.98rem;
+}
+
+.parameter-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.parameter-list span {
+  background: var(--surface);
+  font-size: 0.82rem;
+}
+
+.research-metrics {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.research-explanation {
+  color: var(--muted);
+  font-size: 0.93rem;
+}
+
+.research-caveat {
+  margin: 18px 0;
+  padding: 16px 18px;
+  border-left: 3px solid var(--accent-2);
+  border-radius: 0 12px 12px 0;
+  background: #f0f5f6;
+  color: #43525d;
+  font-size: 0.91rem;
+}
+
+.research-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.subsection-heading {
+  margin: 48px 0 20px;
+}
+
+.subsection-heading .tag {
+  margin-bottom: 6px;
+}
+
+.subsection-heading h3 {
+  font-size: 1.45rem;
+  margin: 0;
+}
+
+.visit-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.visit-card {
+  padding: 20px 22px;
+}
+
+.visit-date {
+  margin: 0 0 8px;
+  color: var(--accent-2);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.visit-card h4 {
+  margin: 0 0 8px;
+  font-size: 1.02rem;
+}
+
+.visit-card p:last-child {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.language-line {
+  margin-top: 22px;
+  padding: 16px 18px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  color: var(--muted);
+  background: var(--surface);
+}
+
+.contact-intro {
+  max-width: 680px;
+  color: #d4dce2;
+}
+
+@media (max-width: 900px) {
+  .education-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .education-card.featured {
+    grid-column: span 2;
+  }
+  .research-metrics {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .education-grid,
+  .visit-grid {
+    grid-template-columns: 1fr;
+  }
+  .education-card.featured {
+    grid-column: auto;
+  }
+  .research-metrics {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .education-stats {
+    flex-wrap: wrap;
+  }
+  .research-actions .btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 420px) {
+  .research-metrics {
+    grid-template-columns: 1fr;
+  }
 }
